@@ -1,0 +1,27 @@
+
+.cmp-tabs__tablist{
+        justify-content: center;
+        font-weight: bold;
+    	font-size: 20px;
+    }
+
+
+.cmp-tabs__tab {
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent !important;
+    padding: .3rem 2rem !important;
+    cursor: pointer;
+
+}
+
+.cmp-tabs__tab--active {
+    border-color: #e83e8c !important;
+}
+
+@media (max-width: 767px){
+.cmp-tabs__tablist{
+        display: none !important;
+    }
+    .cmp-tabs__tabpanel {
+    display: contents;
+}
