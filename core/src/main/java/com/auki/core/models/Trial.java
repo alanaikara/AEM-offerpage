@@ -15,9 +15,18 @@ public class Trial {
  private String text;
  @Inject @Optional
  private String pathbrowser;
+ 
+ @Inject @Optional
+ private String fileReference;
 
 public String getText() {
 	return text;
+}
+public String getFileReference() {
+	return fileReference;
+}
+public void setFileReference(String fileReference) {
+	this.fileReference = fileReference;
 }
 public void setText(String text) {
 	this.text = text;

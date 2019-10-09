@@ -1,0 +1,12 @@
+				<sly data-sly-use.pageListing="com.auki.core.models.Childclasslist"/>
+<sly data-sly-list.iteratePageList="${pageListing.datafromModelList}">
+
+<h3>${iteratePageList.title}</h3>
+<h3>${iteratePageList.description} </h3>
+<h3>${iteratePageList.image} </h3>
+<h3>${iteratePageList.expiry} </h3>
+<h3>${iteratePageList.teasertitle}</h3>
+<h3>${iteratePageList.StartDate} </h3>
+<h3>${iteratePageList.EndDate}</h3>
+</sly>
+</sly>

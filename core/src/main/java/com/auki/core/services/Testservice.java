@@ -1,5 +1,8 @@
 package com.auki.core.services;
 
-public interface Testservice {
-	public String hello();
-}
+public interface Testservice
+	{
+		
+		public String testing();
+		
+	}

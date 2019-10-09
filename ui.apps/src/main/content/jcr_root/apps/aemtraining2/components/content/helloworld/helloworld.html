@@ -13,6 +13,18 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
+<sly data-sly-use.pageListing="com.auki.core.models.Childclasslist"/>
+<sly data-sly-list.iteratePageList="${pageListing.datafromModelList}">
+
+<h3>${iteratePageList.title}</h3>
+<h3>${iteratePageList.description} </h3>
+<h3>${iteratePageList.image} </h3>
+<h3>${iteratePageList.expiry} </h3>
+<h3>${iteratePageList.teasertitle}</h3>
+<h3>${iteratePageList.StartDate} </h3>
+<h3>${iteratePageList.EndDate}</h3>
+</sly>
+</sly>
 
 
 <pre data-sly-use.hello="com.auki.core.models.HelloWorldModel">
@@ -20,11 +32,43 @@ HelloWorldModel says:
 ${hello.message}
 </pre>
 
+<sly data-sly-use.hey="com.auki.core.models.Traininginterface">
+traininginterface says: ${hey.text}\
+
+</sly>
+
+
+
 <sly data-sly-use.hii="com.auki.core.models.Trial">
-trial says:
-${hii.text}
 <p>Text property: ${hii.text}</p>
 <p>path property: ${hii.pathbrowser}</p>
+<div> <img src=${hii.fileReference} height="42" width="42"> </div>
+</sly>
+
+
+
+<!--/*
+<sly data-sly-use.hii="com.auki.core.models.Trial">
+training  interface says:
+${hii.message}
+<p>Text property: ${hii.text}</p>
+<p>path property: ${hii.pathbrowser}</p>
+</sly>
+*/-->
+
+
+<sly data-sly-use.pageListing="com.auki.core.models.Listchildmodel"/>
+<sly data-sly-list.iteratePageList="${pageListing.newList}">
+<h3>${iteratePageList.title}</h3>
+<h3>${iteratePageList.description} </h3>
+<h3>${iteratePageList.image} </h3>
+<h3>${iteratePageList.expiry} </h3>
+<h3>${iteratePageList.teasertitle}</h3>
+<h3>${iteratePageList.StartDate} </h3>
+<h3>${iteratePageList.EndDate}</h3>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p  id="demo"> tadaaaa</p>
+</sly>
 </sly>
 
 

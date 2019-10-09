@@ -37,7 +37,7 @@ public class Traininginterface {
 	
 	@PostConstruct
 	protected void testConstruct() {
-		this.text = testservice.hello();
+		this.text = testservice.testing();
 	}
 
 

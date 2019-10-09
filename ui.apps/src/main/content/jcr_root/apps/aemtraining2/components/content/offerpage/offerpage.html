@@ -1,0 +1,21 @@
+<sly data-sly-use.pageListing="com.auki.core.models.Childclasslist"/>
+</sly>
+<div class="list">
+	<sly data-sly-list.iteratePageList="${pageListing.datafromModelList}">
+     <div class="listitem">
+		<h3>product ${iteratePageList.id}</h3>
+        <div> <img src=${iteratePageList.image} > </div>
+        <h3>${iteratePageList.teasertitle}</h3>
+        <h5>${iteratePageList.description @context ="html"} </h3>
+        <h3>${iteratePageList.expiry} </h3>
+        <h6>the offer is valid from ${iteratePageList.StartDate} to  ${iteratePageList.EndDate}</h6>
+        <a href="${iteratePageList.link}.html"> click to know more </a>
+    	</div>
+    </div>
+</sly>
+
+
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p  id="demo"> tadaaaa</p>
+
