@@ -20,7 +20,7 @@ public class Listchildmodel {
 	
 	@PostConstruct
 	protected void offerlist() {
-		newList=offerlist.getoffer();
+		newList=offerlist.getoffer(); 
 		
 	}
 

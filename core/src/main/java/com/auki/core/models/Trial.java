@@ -8,8 +8,13 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 
+import com.auki.core.services.PageService;
+
 @Model(adaptables = { Resource.class })
 public class Trial {
+// @Inject
+//private PageService ps;
+	 
 
  @Inject @Optional
  private String text;

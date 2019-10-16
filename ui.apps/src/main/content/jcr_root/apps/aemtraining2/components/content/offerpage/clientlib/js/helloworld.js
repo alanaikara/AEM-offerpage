@@ -9,3 +9,18 @@ $.ajax({
   }
 });
 }
+
+  $(function() {
+    $("#ok").click(function(e) {
+        e.preventDefault();
+        $.ajax({
+    	type: "POST",
+        url: "/bin/test5",
+        data: $('form').serialize(),
+  		success: function(resp) {
+            alert("title:   " + resp.title + "desc   :" + resp.desc);
+            $('#change').text(resp.title);
+  }
+});
+    });
+  });
